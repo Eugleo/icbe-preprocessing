@@ -59,3 +59,6 @@ df %>%
 # FALSE
 df %>%
   assert(na_or_empty(do_interact_kind) | (event_type == "action"))
+
+
+# --- I do have some preprocessing cleanup code as well, but it's not ready for sharing yet ---
