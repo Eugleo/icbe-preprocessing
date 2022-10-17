@@ -57,7 +57,7 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
         - [sayintkind]
             - *contains the event label*
         - *implicit:* conditional?
-            - conditional
+            - conditional event
                 - [condition_do_actor_a]
                 - [condition_do_actor_b]
                 - [condition]
