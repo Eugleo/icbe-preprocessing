@@ -1,6 +1,8 @@
 # Preprocessing the ICBe Dataset
 
-First, my best attempt at connecting the [documentation](https://docs.google.com/document/d/1aJkweohbfIWtNpJw1CmXbeIiK6czbJ5iPyKwiYP1YlU/edit#heading=h.61nwccqse1xi) to the column names in `/Users/eugen/Downloads/ICBe_V1.1_events_agreed.Rds`. The hirerachy would be as follows:
+_This is my best attempt at connecting the [documentation](https://docs.google.com/document/d/1aJkweohbfIWtNpJw1CmXbeIiK6czbJ5iPyKwiYP1YlU/edit#heading=h.61nwccqse1xi) to the column names in `/Users/eugen/Downloads/ICBe_V1.1_events_agreed.Rds`. See below for identified problems._
+
+Each crisis is split into sentences. Each sentence can contain multiple events. The event attributes are then as follows (or see the much nicer [html mindmap](./event.html)):
 
 - **EVENT**
     - [do_duration]
