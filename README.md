@@ -110,8 +110,8 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
         - [think_sentence_events]
             - *contains optional info about what sentences the thinking is about*
 
-In practice, there are a few caveats. Also see the R code.
-
+# Caveats
+ 
 - there are additional fields
     - `do_kind` and `condition_do_kind` seem to contain info about act/interact, armed/unarmed, escalatory/deescalatory (i.e. three levels in the tree)
         - needs verification of consistency
@@ -121,3 +121,4 @@ In practice, there are a few caveats. Also see the R code.
     - in other words, some children don't have parents
     - e.g. some interact_escalates don't have an event_type of action
 - actors aren't always specified
+- experts were allowed to label one event with multiple event types (ie. both action AND thought)
