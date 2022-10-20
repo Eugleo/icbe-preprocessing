@@ -7,7 +7,7 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
 
 - [do_duration]
 - [...bunch of other stuff, like crisno and date...]
-- [event_type], **can have multiple**
+- [event_type], **NOT mutually exclusive!**
     - action
         - [do_actor_a]
         - [do_actor_b]
