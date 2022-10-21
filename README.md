@@ -112,17 +112,11 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
 
 # Questions
 - What is the difference between do_kind and do_interact_kind?
-    - It is not an action/interaction split
+    - Maybe whether to choose one or the other is inferred from the (non)existence of do_actor_b?
 
 # Caveats
 
-It seems that the coding process wasn't precisely defined:
-
-- The coders were allowed to label one event with multiple event types (ie. both action AND thought)
-    - e.g. they were allowed to say "this sentence has one event: an actionthought" instead of the more sensible "this sentence has two events: once action, one thought"
-- The coders could input values for labels such as do_actor and interact_increasecoop even though they didn't label the event as action
-    - So, they often labeled the event as thought, but also added labels for interaction types, action actors, etc.
-
-This means that the tree structure of the labels isn't really that well preserved.
-
-Additionally, in the final (agreed upon) wide table one row doesn't necessarily correspond to one event in a sentence, or even to one expert's opinion. It is aggregated from multiple opinions, but it doesn't represent the (only) consensus, either. 
+- The coders were able to "nest" the tags, however, the structure of the hierarchy isn't preserved
+    - I.e. the coder could say `X was thinking about (Y doing D to Z)`
+    - The structure can be partially recovered, the "main" action ("think" in the example above) seems to be the one saved in event_type
+    - It is unlcear how deep the nesting could go, and in which ways the different tags could be combined
