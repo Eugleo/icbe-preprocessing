@@ -115,7 +115,9 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
     - It is not an action/interaction split
 
 # Caveats
- 
+
+- The coders could input values for labels such as do_actor and interact_increasecoop even though they didn't label the event as action
+    - ...and they did this, often
 - the existence (i.e. non-NA, non-empty) of children doesn't imply the existence of parents
     - in other words, some children don't have parents
     - e.g. some interact_escalates don't have an event_type of action
