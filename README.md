@@ -110,13 +110,12 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
         - [think_sentence_events]
             - *contains optional info about what sentences the thinking is about*
 
+# Questions
+- What is the difference between do_kind and do_interact_kind?
+    - It is not an action/interaction split
+
 # Caveats
  
-- there are additional fields
-    - `do_kind` and `condition_do_kind` seem to contain info about act/interact, armed/unarmed, escalatory/deescalatory (i.e. three levels in the tree)
-        - needs verification of consistency
-    - `interact_kind` and `condition_interact_kind` seem to contain info on armed/unarmed, escalatory/deescalatory
-        - needs verification of consistency
 - the existence (i.e. non-NA, non-empty) of children doesn't imply the existence of parents
     - in other words, some children don't have parents
     - e.g. some interact_escalates don't have an event_type of action
