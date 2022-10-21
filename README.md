@@ -116,10 +116,11 @@ Each crisis is split into sentences. Each sentence can contain multiple events. 
 
 # Caveats
 
+It seems that the coding process wasn't precisely defined:
+
+- The coders were allowed to label one event with multiple event types (ie. both action AND thought)
+    - e.g. they were allowed to say "this sentence has one event: an actionthought" instead of the more sensible "this sentence has two events: once action, one thought"
 - The coders could input values for labels such as do_actor and interact_increasecoop even though they didn't label the event as action
-    - ...and they did this, often
-- the existence (i.e. non-NA, non-empty) of children doesn't imply the existence of parents
-    - in other words, some children don't have parents
-    - e.g. some interact_escalates don't have an event_type of action
-- actors aren't always specified
-- experts were allowed to label one event with multiple event types (ie. both action AND thought)
+    - So, they often labeled the event as thought, but also added labels for interaction types, action actors, etc.
+
+This means that the tree structure of the labels isn't really that well preserved. 
