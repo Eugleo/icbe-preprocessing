@@ -123,4 +123,6 @@ It seems that the coding process wasn't precisely defined:
 - The coders could input values for labels such as do_actor and interact_increasecoop even though they didn't label the event as action
     - So, they often labeled the event as thought, but also added labels for interaction types, action actors, etc.
 
-This means that the tree structure of the labels isn't really that well preserved. 
+This means that the tree structure of the labels isn't really that well preserved.
+
+Additionally, in the final (agreed upon) wide table one row doesn't necessarily correspond to one event in a sentence, or even to one expert's opinion. It is aggregated from multiple opinions, but it doesn't represent the (only) consensus, either. 
